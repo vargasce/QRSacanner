@@ -1,12 +1,22 @@
 import { Component } from '@angular/core';
+import { DataLocalService } from '../../services/data-local.service';
+import { Registro } from '../../models/registro.model';
 
 @Component({
-  selector: 'app-tab2',
-  templateUrl: 'tab2.page.html',
-  styleUrls: ['tab2.page.scss']
+    selector: 'app-tab2',
+    templateUrl: 'tab2.page.html',
+    styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
 
-  constructor() {}
+    constructor(
+        public dataLocal: DataLocalService
+    ) {}
 
+    public onClickHeader(){
+    }
+
+    public abrirRegistro( registro: Registro ){
+        this.dataLocal.abrirRegistro( registro );
+    }
 }

@@ -1,4 +1,12 @@
 
 <ion-content [fullscreen]="true">
+    
+    <ion-slides mode="ios" [options]="swiperOpts">
+        <ion-slide>
+            <ion-button (click)="scan()" expand="full" fill="outline" size="large" >
+                Scan Cod
+            </ion-button>
+        </ion-slide>
+    </ion-slides>
 
 </ion-content>
