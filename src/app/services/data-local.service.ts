@@ -48,8 +48,9 @@ export class DataLocalService implements OnInit {
                 this.iab.create( registro.text, '_system' );
             break;
 
-            case '':
+            case 'geo':
 
+                this.navCtrl.navigateForward(`/tabs/mapa/${registro.text}`);
             break;
         }
     }

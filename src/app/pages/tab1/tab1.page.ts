@@ -29,7 +29,7 @@ export class Tab1Page {
 
         }).catch( ( _error ) => {
             console.log( _error );
-            this._dataLocalService.guardarRegistro( 'QRCode', 'geo:40.73151796986687,-74.06087294062502' );
+            this._dataLocalService.guardarRegistro( 'QRCpde', 'geo:40.73151796986687,-74.06087294062502' );
         });
     }
 
