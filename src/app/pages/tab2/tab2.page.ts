@@ -14,9 +14,14 @@ export class Tab2Page {
     ) {}
 
     public onClickHeader(){
+        this.enviarCorreo();
     }
 
     public abrirRegistro( registro: Registro ){
         this.dataLocal.abrirRegistro( registro );
+    }
+
+    private enviarCorreo(){
+        this.dataLocal.enviarCorreo();
     }
 }

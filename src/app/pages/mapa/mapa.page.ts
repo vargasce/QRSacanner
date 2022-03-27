@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { environment } from '../../../environments/environment'
 
 declare var mapboxgl: any;
 
@@ -36,7 +37,7 @@ export class MapaPage implements OnInit, AfterViewInit {
 
     private preViewMap(){
 
-        mapboxgl.accessToken = 'pk.eyJ1IjoiY3Jpc2VtYXZhcmdhczIwIiwiYSI6ImNsMHdzcHllcDE4YmczcG9hdzIxMXNpcWEifQ.FFzfjaP1zIMYbX17HzXB2w';
+        mapboxgl.accessToken = environment.mapsApi;
 
         const map = new mapboxgl.Map({
             style: 'mapbox://styles/mapbox/light-v10',
